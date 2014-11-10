@@ -1,7 +1,7 @@
 package net.shadowfacts.foodies.item;
 
 /**
- * Class for registering items.
+ * Helper class for registering items.
  * @author shadowfacts
  */
 public class FItems {
