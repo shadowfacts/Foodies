@@ -1,5 +1,7 @@
 package net.shadowfacts.foodies;
 
+import org.apache.logging.log4j.Logger;
+
 import cpw.mods.fml.common.Mod;
 import cpw.mods.fml.common.Mod.EventHandler;
 import cpw.mods.fml.common.Mod.Instance;
@@ -11,10 +13,11 @@ import cpw.mods.fml.common.event.FMLPreInitializationEvent;
 import net.minecraft.creativetab.CreativeTabs;
 import net.minecraft.init.Items;
 import net.minecraft.item.Item;
+
+import net.shadowfacts.foodies.block.FBlocks;
 import net.shadowfacts.foodies.item.FItems;
 import net.shadowfacts.foodies.proxy.CommonProxy;
-
-import org.apache.logging.log4j.Logger;
+import net.shadowfacts.foodies.recipe.FRecipes;
 
 
 /**
@@ -55,16 +58,21 @@ public class Foodies  {
 		log = event.getModLog();
 
 		FItems.preInit();
-
+		FBlocks.preInit();
+		FRecipes.preInit();
 	}
 
 	@EventHandler
 	public void load(FMLInitializationEvent event) {
 		FItems.load();
+		FBlocks.load();
+		FRecipes.load();
 	}
 
 	@EventHandler
 	public void postInit(FMLPostInitializationEvent event) {
+		FItems.postInit();
+		FItems.postInit();
 		FItems.postInit();
 	}
 }
