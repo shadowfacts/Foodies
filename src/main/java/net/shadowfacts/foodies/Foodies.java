@@ -8,8 +8,13 @@ import cpw.mods.fml.common.event.FMLInitializationEvent;
 import cpw.mods.fml.common.event.FMLPostInitializationEvent;
 import cpw.mods.fml.common.event.FMLPreInitializationEvent;
 
+import net.minecraft.creativetab.CreativeTabs;
+import net.minecraft.init.Items;
+import net.minecraft.item.Item;
 import net.shadowfacts.foodies.item.FItems;
 import net.shadowfacts.foodies.proxy.CommonProxy;
+
+import org.apache.logging.log4j.Logger;
 
 
 /**
@@ -34,9 +39,23 @@ public class Foodies  {
 	@SidedProxy(clientSide = Foodies.clientProxyString, serverSide = Foodies.commonProxyString)
 	public static CommonProxy proxy;
 
+	// Logger
+	public static Logger log;
+
+	// Creative Tab
+	public static CreativeTabs creativeTab = new CreativeTabs("FoodiesTab") {
+		@Override
+		public Item getTabIconItem() {
+			return Items.apple;
+		}
+	};
+
 	@EventHandler
 	public void preInit(FMLPreInitializationEvent event) {
+		log = event.getModLog();
+
 		FItems.preInit();
+
 	}
 
 	@EventHandler
