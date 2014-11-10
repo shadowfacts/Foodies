@@ -1,0 +1,16 @@
+[
+{
+  "modid": "foodies",
+  "name": "Foodies",
+  "description": "A Minecraft mod all about food.",
+  "version": "${version}",
+  "mcversion": "${mcversion}",
+  "url": "http://github.com/shadowfacts/Foodies",
+  "updateUrl": "",
+  "authorList": ["shadowfacts"],
+  "credits": "",
+  "logoFile": "",
+  "screenshots": [],
+  "dependencies": []
+}
+]
