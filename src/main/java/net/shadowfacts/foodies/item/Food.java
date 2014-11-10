@@ -7,15 +7,15 @@ import net.shadowfacts.foodies.Foodies;
  * Base class for food items.
  * @author shadowfacts
  */
-public class BaseFood extends ItemFood {
+public class Food extends ItemFood {
 
-	public BaseFood(int healAmount, float saturation, boolean wolfFood) {
+	public Food(int healAmount, float saturation, boolean wolfFood) {
 		super(healAmount, saturation, wolfFood);
 		this.setCreativeTab(Foodies.creativeTab);
 	}
 
 	@Override
-	public BaseFood setTextureName(String name) {
+	public Food setTextureName(String name) {
 		super.setTextureName(Foodies.modId + name);
 
 		return this;
