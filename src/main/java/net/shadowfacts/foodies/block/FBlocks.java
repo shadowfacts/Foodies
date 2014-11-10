@@ -5,4 +5,15 @@ package net.shadowfacts.foodies.block;
  * @author shadowfacts
  */
 public class FBlocks {
+	public static void preInit() {
+
+	}
+
+	public static void load() {
+
+	}
+
+	public static void postInit() {
+
+	}
 }
