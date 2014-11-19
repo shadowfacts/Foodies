@@ -30,12 +30,12 @@ public class Foodies  {
 	// Modinfo
 	public static final String modId = "foodies";
 	public static final String displayName = "Foodies";
-	public static final String version = "0.0.1";
+	public static final String version = "@VERSION@";
 	public static final String commonProxyString = "net.shadowfacts.foodies.proxy.CommonProxy";
 	public static final String clientProxyString = "net.shadowfacts.foodies.proxy.ClientProxy";
 
 	// Mod instance
-	@Instance
+	@Instance(value=modId)
 	public static Foodies instance;
 
 	// Proxy
