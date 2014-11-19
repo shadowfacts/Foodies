@@ -15,6 +15,7 @@ public class FItems {
 	public static Food cheese;
 	public static Food cheeseburger;
 	public static Food lettuce;
+	public static Food deluxeCheeseburger;
 
 	public static void preInit() {
 		// Create Items
@@ -25,6 +26,7 @@ public class FItems {
 		cheese = new Food(2, 0.3f).setUnlocalizedName("foodCheese").setTextureName("foodCheese");
 		cheeseburger = new Food(10, 0.8f).setUnlocalizedName("foodCheeseburger").setTextureName("foodCheeseburger");
 		lettuce = new Food(1, 0.1f).setUnlocalizedName("vegeLettuce").setTextureName("vegeLettuce");
+		deluxeCheeseburger = new Food(15, 1.0f).setUnlocalizedName("foodDeluxeCheeseburger").setTextureName("foodDeluxeCheeseburger");
 
 		// Register items
 		GameRegistry.registerItem(toast, "foodToast");
@@ -34,6 +36,7 @@ public class FItems {
 		GameRegistry.registerItem(cheese, "foodCheese");
 		GameRegistry.registerItem(cheeseburger, "foodCheeseburger");
 		GameRegistry.registerItem(lettuce, "vegeLettuce");
+		GameRegistry.registerItem(deluxeCheeseburger, "foodDeluxeCheeseburger");
 	}
 
 	public static void load() {
