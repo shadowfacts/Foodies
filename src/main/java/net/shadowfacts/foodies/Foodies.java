@@ -1,7 +1,5 @@
 package net.shadowfacts.foodies;
 
-import org.apache.logging.log4j.Logger;
-
 import cpw.mods.fml.common.Mod;
 import cpw.mods.fml.common.Mod.EventHandler;
 import cpw.mods.fml.common.Mod.Instance;
@@ -9,15 +7,13 @@ import cpw.mods.fml.common.SidedProxy;
 import cpw.mods.fml.common.event.FMLInitializationEvent;
 import cpw.mods.fml.common.event.FMLPostInitializationEvent;
 import cpw.mods.fml.common.event.FMLPreInitializationEvent;
-
 import net.minecraft.creativetab.CreativeTabs;
-import net.minecraft.init.Items;
 import net.minecraft.item.Item;
-
 import net.shadowfacts.foodies.block.FBlocks;
 import net.shadowfacts.foodies.item.FItems;
 import net.shadowfacts.foodies.proxy.CommonProxy;
 import net.shadowfacts.foodies.recipe.FRecipes;
+import org.apache.logging.log4j.Logger;
 
 
 /**
@@ -49,7 +45,7 @@ public class Foodies  {
 	public static CreativeTabs creativeTab = new CreativeTabs("FoodiesTab") {
 		@Override
 		public Item getTabIconItem() {
-			return Items.apple;
+			return FItems.toast;
 		}
 	};
 
