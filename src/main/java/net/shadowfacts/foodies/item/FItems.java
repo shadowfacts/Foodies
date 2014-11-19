@@ -13,6 +13,7 @@ public class FItems {
 	public static Food beefPattie;
 	public static Food hamburger;
 	public static Food cheese;
+	public static Food cheeseburger;
 
 	public static void preInit() {
 		// Create Items
@@ -21,6 +22,7 @@ public class FItems {
 		beefPattie = new Food(3, 0.6f).setUnlocalizedName("foodBeefPattie").setTextureName("foodBeefPattie");
 		hamburger = new Food(5, 0.7f).setUnlocalizedName("foodHamburger").setTextureName("foodHamburger");
 		cheese = new Food(2, 0.3f).setUnlocalizedName("foodCheese").setTextureName("foodCheese");
+		cheeseburger = new Food(10, 0.8f).setUnlocalizedName("foodCheeseburger").setTextureName("foodCheeseburger");
 
 		// Register items
 		GameRegistry.registerItem(toast, "foodToast");
@@ -28,6 +30,7 @@ public class FItems {
 		GameRegistry.registerItem(beefPattie, "foodBeefPattie");
 		GameRegistry.registerItem(hamburger, "foodHamburger");
 		GameRegistry.registerItem(cheese, "foodCheese");
+		GameRegistry.registerItem(cheeseburger, "foodCheeseburger");
 	}
 
 	public static void load() {
