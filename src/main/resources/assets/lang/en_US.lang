@@ -1,2 +1,8 @@
 # Creative Tab
 itemGroup.FoodiesTab=Foodies
+
+# Items
+item.foodToast.name=Toast
+item.fruitTomato.name=Tomato
+item.foodBeefPattie.name=Beef Pattie
+item.foodHamburger.name=Hamburger
