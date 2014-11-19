@@ -9,9 +9,16 @@ import net.shadowfacts.foodies.Foodies;
  */
 public class Food extends ItemFood {
 
-	public Food(int healAmount, float saturation, boolean wolfFood) {
-		super(healAmount, saturation, wolfFood);
+	public Food(int healAmount, float saturation) {
+		super(healAmount, saturation, false);
 		this.setCreativeTab(Foodies.creativeTab);
+	}
+
+	@Override
+	public Food setUnlocalizedName(String name) {
+		super.setUnlocalizedName(name);
+
+		return this;
 	}
 
 	@Override
