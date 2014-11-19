@@ -14,6 +14,7 @@ public class FRecipes {
 		// Shapeless
 		GameRegistry.addShapelessRecipe(new ItemStack(FItems.hamburger), new ItemStack(FItems.toast), new ItemStack(FItems.beefPattie), new ItemStack(FItems.toast));
 		GameRegistry.addShapelessRecipe(new ItemStack(FItems.cheeseburger), new ItemStack(FItems.hamburger), new ItemStack(FItems.cheese));
+		GameRegistry.addShapelessRecipe(new ItemStack(FItems.deluxeCheeseburger), new ItemStack(FItems.cheeseburger), new ItemStack(FItems.lettuce), new ItemStack(FItems.tomato));
 
 		// Shaped
 
