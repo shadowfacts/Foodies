@@ -14,7 +14,7 @@ public class FItems {
 
 	public static void preInit() {
 		// Create Items
-		toast = new Food(7, 0.7f).setUnlocalizedName("foodToast").setTextureName("foodToast");
+		toast = new Food(5, 0.3f).setUnlocalizedName("foodToast").setTextureName("foodToast");
 		tomato = new Food(1, 0.1f).setUnlocalizedName("fruitTomato").setTextureName("fruitTomato");
 		beefPattie = new Food(7, 0.4f).setUnlocalizedName("foodBeefPattie").setTextureName("foodBeefPattie");
 
