@@ -10,3 +10,7 @@ item.foodCheese.name=Cheese
 item.foodCheeseburger.name=Cheeseburger
 item.vegeLettuce.name=Lettuce
 item.foodDeluxeCheeseburger.name=Deluxe Cheeseburger
+item.seedTomato.name=Tomato Seeds
+
+# Blocks
+tile.tomatoCrops.name=Tomato

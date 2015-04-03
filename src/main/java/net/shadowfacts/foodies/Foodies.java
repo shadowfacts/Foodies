@@ -53,8 +53,8 @@ public class Foodies  {
 	public void preInit(FMLPreInitializationEvent event) {
 		log = event.getModLog();
 
-		FItems.preInit();
 		FBlocks.preInit();
+		FItems.preInit();
 		FRecipes.preInit();
 	}
 

@@ -3,6 +3,7 @@ package net.shadowfacts.foodies.recipe;
 import cpw.mods.fml.common.registry.GameRegistry;
 import net.minecraft.init.Items;
 import net.minecraft.item.ItemStack;
+import net.minecraftforge.common.MinecraftForge;
 import net.shadowfacts.foodies.item.FItems;
 
 /**
@@ -12,6 +13,7 @@ import net.shadowfacts.foodies.item.FItems;
 public class FRecipes {
 	public static void preInit() {
 		// Shapeless
+		GameRegistry.addShapelessRecipe(new ItemStack(FItems.tomatoSeeds, 4), new ItemStack(FItems.tomato));
 		GameRegistry.addShapelessRecipe(new ItemStack(FItems.hamburger), new ItemStack(FItems.toast), new ItemStack(FItems.beefPattie), new ItemStack(FItems.toast));
 		GameRegistry.addShapelessRecipe(new ItemStack(FItems.cheeseburger), new ItemStack(FItems.hamburger), new ItemStack(FItems.cheese));
 		GameRegistry.addShapelessRecipe(new ItemStack(FItems.deluxeCheeseburger), new ItemStack(FItems.cheeseburger), new ItemStack(FItems.lettuce), new ItemStack(FItems.tomato));
@@ -22,6 +24,8 @@ public class FRecipes {
 
 
 		registerSmelting();
+
+		MinecraftForge.addGrassSeed(new ItemStack(FItems.tomatoSeeds), 5);
 	}
 
 	private static void registerSmelting() {
